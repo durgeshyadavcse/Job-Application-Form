@@ -1,0 +1,211 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Soft gray background for better focus on the form */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+div {
+    width: 90%;
+    max-width: 600px; /* Keeps form width manageable on larger screens */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading styling */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* File input styling */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Dropdown styling */
+select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Form group for better spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    div {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* Styling the form group container */
+.form-group {
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the label */
+label[for="position"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Styling the select dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Adding focus effect */
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Styling the default option */
+option {
+    padding: 10px;
+}
+
+/* Adding a little margin to the dropdown */
+select, option {
+    margin-top: 5px;
+}
+/* Styling the form group container */
+.form-group {
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the label */
+label[for="resume"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Styling the file input */
+input[type="file"] {
+    font-size: 14px;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Styling the file input when it's focused */
+input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Adding a custom button style for the file input */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Custom styles for non-webkit browsers (like Firefox) */
+input[type="file"]::-moz-file-upload-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="file"]::-moz-file-upload-button:hover {
+   
+}
+
