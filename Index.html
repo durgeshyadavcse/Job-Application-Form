@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="job.css">
+    <script src="job.js" defer></script> <!-- Use defer to ensure the script loads after the DOM -->
+</head>
+<body>
+    <div>
+        <h1>Job Application Form</h1>
+        <form id="jobApplicationForm" action="http://127.0.0.1:5500/submit_application" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+            
+            <h2>Contact Details</h2>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+            
+            <div class="form-group">
+                <label for="position">Position Applied For</label>
+                <select id="position" name="position" required>
+                    <option value="">-- Select Position --</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                    <option value="intern">Intern</option>
+            
+                </select>
+                <br>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="signature">Signature</label>
+            <input type="text" id="signature" name="signature">
+            <br>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
